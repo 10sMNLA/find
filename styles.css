@@ -318,30 +318,6 @@ button:hover, select:hover {
 }
 
 @media (max-width: 768px) {
-  .desktop-nav, .header-right {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 22px;
-  }
-
-  .header-center {
-    flex: 2;
-  }
-
-  .header-left {
-    flex: 1;
-  }
-}
-
-
-/* --- Fixed mobile header layout --- */
-
-@media (max-width: 768px) {
   .header-wrapper {
     display: flex;
     flex-direction: column;
