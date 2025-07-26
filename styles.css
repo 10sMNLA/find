@@ -320,27 +320,22 @@ button:hover, select:hover {
 @media (max-width: 768px) {
   .header-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
-  }
-
-  .header-left {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    padding: 10px 20px;
   }
 
   .site-logo {
-    height: 80px; /* Set logo height */
+    height: 60px; /* ✅ Adjust logo size */
     margin: 0 auto;
   }
 
   .mobile-menu-icon {
     position: absolute;
-    top: 15px;
     right: 20px;
     font-size: 28px;
+    cursor: pointer;
   }
 
   .desktop-nav,
