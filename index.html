@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Fonts: Outfit -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Tennis Court Locator PH</title>
+<!-- Leaflet CSS -->
+<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet"/>
+<style>
+header a {
+  color: black;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  font-family: 'Outfit', sans-serif;
+}
+header a:hover {
+  color: #f7c600;
+}
+header .social-icons {
+  font-style: italic;
+  color: black;
+  font-family: 'Outfit', sans-serif;
+  margin-left: auto;
+}
+</style></link><link href="centrix-favicon.png" rel="icon" type="image/png"/></head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="TNSMNL Logo">
+    </div>
+    <nav class="nav-center">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="social-right">
+      <span>Fb</span>
+      <span>Ig</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="container">
+<div class="filters">
+<label for="region-select">Region:</label>
+<select id="region-select">
+<option value="">All</option>
+<option value="Luzon">Luzon</option>
+<option value="Visayas">Visayas</option>
+<option value="Mindanao">Mindanao</option>
+</select>
+<label for="city-select">City:</label>
+<select disabled="" id="city-select">
+<option value="">All</option>
+</select>
+</div>
+<div class="court-details hidden" id="court-details-container">
+<img alt="Court photo" id="court-photo"/>
+<h2 id="court-name"></h2>
+<ul id="court-details"></ul>
+</div>
+<div id="map" style="height: 350px; margin-top: 1rem;"></div>
+<div class="card-grid" id="court-list"></div>
+</main>
+<!-- Leaflet JS -->
+<script crossorigin="" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
