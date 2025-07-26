@@ -337,3 +337,31 @@ button:hover, select:hover {
     flex: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .header-left,
+  .header-center,
+  .header-right {
+    display: none;
+  }
+
+  .header-wrapper {
+    justify-content: center;
+    position: relative;
+  }
+
+  .site-logo {
+    display: block;
+    margin: 0 auto;
+    height: 100px;  /* ✅ Change this to adjust size */
+    width: auto;
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    display: block;
+  }
+}
