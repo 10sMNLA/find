@@ -339,22 +339,30 @@ button:hover, select:hover {
 }
 
 @media (max-width: 768px) {
-  .site-logo {
-    display: block;
-    margin: 0 auto;
-    height: 100px;   /* ✅ Smaller, cleaner for mobile */
-    width: auto;
-  }
+ /* ✅ Show the logo and center it */
+.header-left {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-  .header-left,
-  .header-right {
-    display: none;
-  }
+.site-logo {
+  display: block;
+  margin: 0 auto;
+  max-height: 42px;
+}
 
-  .header-wrapper {
-    justify-content: center;
-    position: relative;
-  }
+/* ❌ Hide social icons */
+.header-right {
+  display: none;
+}
+
+/* ✅ Center entire header content */
+.header-wrapper {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
   .mobile-menu-icon {
     position: absolute;
