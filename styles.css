@@ -339,8 +339,14 @@ button:hover, select:hover {
 }
 
 @media (max-width: 768px) {
+  .site-logo {
+    display: block;
+    margin: 0 auto;
+    height: 100px;   /* ✅ Smaller, cleaner for mobile */
+    width: auto;
+  }
+
   .header-left,
-  .header-center,
   .header-right {
     display: none;
   }
@@ -348,13 +354,6 @@ button:hover, select:hover {
   .header-wrapper {
     justify-content: center;
     position: relative;
-  }
-
-  .site-logo {
-    display: block;
-    margin: 0 auto;
-    height: 100px;  /* ✅ Change this to adjust size */
-    width: auto;
   }
 
   .mobile-menu-icon {
