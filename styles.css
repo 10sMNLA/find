@@ -342,30 +342,33 @@ button:hover, select:hover {
 /* --- Fixed mobile header layout --- */
 
 @media (max-width: 768px) {
-  .site-logo {
-    height: 42px; /* adjust logo size */
-    margin: 0 auto; /* centers the logo */
-  }
-
   .header-wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: relative;
   }
 
-  .header-left,
-  .header-center,
-  .header-right {
+  .header-left {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
+  .site-logo {
+    height: 42px; /* Set logo height */
+    margin: 0 auto;
+  }
+
   .mobile-menu-icon {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
     font-size: 28px;
+  }
+
+  .desktop-nav,
+  .header-right {
+    display: none;
   }
 }
