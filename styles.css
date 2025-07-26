@@ -61,7 +61,7 @@ header {
 
 .filter select:hover,
 .filter select:focus {
-  border-color: #864cf4;
+  border-color: #b3b1b5;
   outline: none;
 }
 
@@ -167,7 +167,7 @@ button, select {
 }
 
 button:hover, select:hover {
-  background-color: #4e0079;
+  background-color: #d1ede2;
 }
 
 
@@ -185,7 +185,7 @@ button:hover, select:hover {
 }
 
 .logo {
-  height: 60px;
+  height: 80px;
   width: auto;
 }
 
@@ -241,7 +241,7 @@ button:hover, select:hover {
 }
 
 .nav-center a:hover {
-  color: #4e0079;
+  color: #01764a;
 }
 
 .social-right {
