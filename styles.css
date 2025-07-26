@@ -280,7 +280,7 @@ button:hover, select:hover {
 }
 
 .site-logo {
-  max-height: 48px;
+  max-height: 120px;
 }
 
 .desktop-nav a {
@@ -297,7 +297,7 @@ button:hover, select:hover {
 /* Mobile styles */
 .mobile-menu-icon {
   display: none;
-  font-size: 26px;
+  font-size: 40px;
   cursor: pointer;
 }
 
